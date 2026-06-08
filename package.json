@@ -1,0 +1,36 @@
+{
+  "name": "orval-wrap",
+  "version": "1.0.0",
+  "description": "TypeScript API client wrapper - OpenAPI Schema auto-generates type-safe clients",
+  "main": "index.js",
+  "scripts": {
+    "generate": "orval --config ./orval.config.ts",
+    "generate:react": "orval --config ./orval.config.ts --client react-query",
+    "generate:vue": "orval --config ./orval.config.ts --client vue-query",
+    "generate:svelte": "orval --config ./orval.config.ts --client svelte-query",
+    "generate:solid": "orval --config ./orval.config.ts --client solid-query",
+    "generate:angular": "orval --config ./orval.config.ts --client angular",
+    "generate:hono": "orval --config ./orval.config.ts --client hono",
+    "generate:fetch": "orval --config ./orval.config.ts --client fetch"
+  },
+  "keywords": [
+    "orval",
+    "openapi",
+    "swagger",
+    "typescript",
+    "api-client",
+    "react-query",
+    "type-safe",
+    "code-generator",
+    "openapi-generator"
+  ],
+  "author": "@q15004040209-creator",
+  "license": "MIT",
+  "devDependencies": {
+    "orval": "^1.0.0"
+  },
+  "peerDependencies": {
+    "axios": ">=1.0.0",
+    "@tanstack/react-query": ">=5.0.0"
+  }
+}
